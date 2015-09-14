@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/haukurmar/travis-ci/issues"
   },
-  "homepage": "https://github.com/haukurmar/travis-ci#readme"
+  "homepage": "https://github.com/haukurmar/travis-ci#readme",
+  "devDependencies": {
+    "rimraf": "^2.4.3"
+  }
 }
