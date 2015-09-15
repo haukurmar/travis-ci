@@ -10,13 +10,16 @@ before_install:
 before_script:
 - git config --global user.name ${GIT_NAME}
 - git config --global user.email ${GIT_EMAIL}
+- echo git remote origin
+- git remote rm origin
+- git remote add origin https://haukurmar:${GH_TOKEN}@github.com/haukurmar/travis-ci.git
 
 script:
 - npm run build
 
 after_success:
 - ls
-- git commit -am "Dist build"
+- git commit -am "Dist build %{build_number}"
 - git push origin HEAD:master
 
 env:
