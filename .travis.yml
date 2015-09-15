@@ -11,7 +11,7 @@ after_success:
 - git config --global user.email "haukurmar@gmail.com"
 - git add .
 - git commit -am "Travis CI"
-- git push "https://$ENV['GH_TOKEN']@${GH_REF}" origin master
+- git push "https://${ENV['GH_TOKEN']}@${GH_REF}" origin master
 env:
   global:
   - secure: E0u+PlB8gs8aALOJEf5IX5qqElFfOWLBdKR4+7XoNddKWtJyozRX8HSXeUW8SqXuBMWqBCtcwMBVSXrldYeOU0BBFHk2D0F3OY9i/rTVA6xp+mbJojhGvJyIw6uvHU0cjHTr3qOdXHY4reNHPsSBZkyIO8tLTwXy/UkpqNfduDCymDJVNfpQNnJ5nH9XJn1hf2HWYPZynZodG1/qoVvBWSlsrtb2+Lk51PkO2WfHyMy7ozFjUUX0bkPJ2fvre+ic4HGHlD/+OUTMVE5Az6FoWMLFZ/sxb5FTpq12FG7DIwuZUthRXdPfDTZUSM2tuf/JxW2y6x/jlntbsbtiWxcdgirP5HqW8zaf/SgEWVDQgQli09w71jEHyJHiEZHgND3w6k/EUvqM5kA+72xCi00QGOZmlXjrK/1WTnSukKetHZ4V9Q1+H+BU846/VHYu4GzSAiCn8uHjelmtXtzUyg5eXowEeVAnW4XNGx8UbFZcMQ+pUjiy3WcwY3cdr11esWv2jJDdd8CkNKqJ9PqdQOE+DJsmWhtQ/ma1fqNrxKL2bgOW/sXBeH0lWcnDKGvDfnE9zpTSlGU3xokWvtbVukOYdqL++bGdGGlVTqo3bxVX7Gy4ZTKvoKBdZb4wk6roNYDRPVRWUVmeOYxGQfxyD8GmSzKS8C8pkqSHSDlw6pzHBM4=
