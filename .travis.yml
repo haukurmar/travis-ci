@@ -14,11 +14,13 @@ before_script:
 - git remote add origin https://haukurmar:${GH_TOKEN}@github.com/haukurmar/travis-ci.git
 
 script:
-- npm run deploy
+- npm run build
 
 after_success:
-- cd dist
 - ls
+- git add dist
+- git commit -am "Dist build"
+- git push
 
 env:
   global:
