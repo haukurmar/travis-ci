@@ -10,6 +10,7 @@ before_install:
 before_script:
 - git config --global user.name ${GIT_NAME}
 - git config --global user.email ${GIT_EMAIL}
+- git config --global push.default current
 - git remote rm origin
 - git remote add origin https://haukurmar:${GH_TOKEN}@github.com/haukurmar/travis-ci.git
 
