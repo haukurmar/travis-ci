@@ -7,7 +7,7 @@ script:
 - npm run build
 after_success:
 - cd dist
-- git config --global user.name "Haukur Már Böðvarsson"
+- git config --global user.name ${GIT_NAME}
 - git config --global user.email "haukurmar@gmail.com"
 - git add .
 - git commit -am "Travis CI"
