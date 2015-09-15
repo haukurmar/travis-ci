@@ -19,7 +19,7 @@ script:
 
 after_success:
 - ls
-- git commit -am "Dist build by Travis-CI build number ${TRAVIS_BUILD_NUMBER}"
+- git commit -am "Travis Dist build (#${TRAVIS_BUILD_NUMBER})"
 - git push origin HEAD:master
 
 env:
