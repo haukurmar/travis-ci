@@ -6,7 +6,7 @@ gulp.task('build', function(done) {
 			.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('git:deploy', function(done) {
+gulp.task('git:deploy', ['build'], function(done) {
 	buildBranch({
 		branch: 'release',
 		ignore: ['.git', 'src', 'node_modules'],

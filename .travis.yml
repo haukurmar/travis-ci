@@ -15,6 +15,7 @@ before_script:
 
 script:
 - npm run deploy
+
 after_success:
 - cd dist
 - ls
