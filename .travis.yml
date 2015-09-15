@@ -12,9 +12,11 @@ after_success:
 - echo ${GIT_EMAIL}
 - git config --global user.name ${GIT_NAME}
 - git config --global user.email ${GIT_EMAIL}
+- git remote rm origin
+- git remote add origin https://haukurmar:${GH_TOKEN}@github.com/haukurmar/travis-ci.git
 - git add .
 - git commit -am "Travis CI"
-- git push "https://haukurmar:${GH_TOKEN}@github.com/haukurmar/travis-ci.git" origin master
+- git push origin master
 
 env:
   global:
