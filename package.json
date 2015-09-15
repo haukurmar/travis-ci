@@ -6,8 +6,7 @@
   "scripts": {
     "build": "rimraf ./dist && mkdir dist && cp ./src/app/index.html ./dist/index.html ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "rimraf ./dist && mkdir dist && cp ./src/app/index.html ./dist/index.html && gulp git:deploy",
-    "deploy2": "rimraf ./dist && mkdir dist && cp ./src/app/index.html ./dist/index.html && NODE_ENV=prod && gulp git:deploy"
+    "deploy": "rimraf ./dist && mkdir dist && NODE_ENV=prod && gulp git:deploy"
   },
   "repository": {
     "type": "git",
