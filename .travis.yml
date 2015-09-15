@@ -6,6 +6,7 @@ branches:
     - master
 before_install:
 - npm install -g gulp
+- npm install
 before_script:
 - git config --global user.name ${GIT_NAME}
 - git config --global user.email ${GIT_EMAIL}
